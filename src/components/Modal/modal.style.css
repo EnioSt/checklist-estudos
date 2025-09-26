@@ -1,0 +1,75 @@
+.container-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* fundo escuro semi-transparente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* bem alto pra garantir que fique na frente */
+}
+
+.inner-modal {
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  width: 472px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div-itens {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.div-botao {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-modal {
+  width: 360px;
+  height: 48px;
+  background-color: transparent;
+  border: solid 1px #eaeaea;
+  border-radius: 24px;
+  color: #eaeaea;
+  text-align: center;
+}
+
+.input-modal::placeholder {
+  color: #eaeaea;
+  text-align: center;
+  padding: 12px;
+}
+
+button {
+  color: white;
+  padding: 12px 16px;
+  background-color: #877eed;
+  border-radius: 24px;
+  border-style: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #544acb;
+}
